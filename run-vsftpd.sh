@@ -37,6 +37,8 @@ echo "pasv_enable=${PASV_ENABLE}" >> /etc/vsftpd/vsftpd.conf
 echo "file_open_mode=${FILE_OPEN_MODE}" >> /etc/vsftpd/vsftpd.conf
 echo "local_umask=${LOCAL_UMASK}" >> /etc/vsftpd/vsftpd.conf
 echo "xferlog_std_format=${XFERLOG_STD_FORMAT}" >> /etc/vsftpd/vsftpd.conf
+echo "dual_log_enable=YES" >> /etc/vsftpd/vsftpd.conf
+echo "log_ftp_protocol=YES" >> /etc/vsftpd/vsftpd.conf
 
 # Add ssl options
 if [ "$SSL_ENABLE" = "YES" ]; then
